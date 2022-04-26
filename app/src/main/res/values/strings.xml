@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">TRPAM</string>
+    <string name="app">NFT SEA</string>
+    <string name="word">your awesome app</string>
+    <string name="email">Email</string>
+    <string name="emailA">Email Address</string>
+    <string name="emailB">Enter Email Address</string>
+    <string name="emailC">Email Address:</string>
+    <string name="pass">Password</string>
+    <string name="repass">Reset Password</string>
+    <string name="forpass">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="registeruser">Register User</string>
+    <string name="fullname">Full Name</string>
+    <string name="fullnameA">Full Name:</string>
+    <string name="age">Age</string>
+    <string name="ageA">Age</string>
+    <string name="home">HOME</string>
+    <string name="logout">LOGOUT</string>
 </resources>
