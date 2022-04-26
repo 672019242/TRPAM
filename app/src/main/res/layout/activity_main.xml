@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="NFT SEA"
         android:textSize="60sp"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:textStyle="bold"
         android:fontFamily="sans-serif-black"
@@ -26,24 +27,25 @@
         android:layout_height="wrap_content"
       android:text="your awesome app"
       android:textStyle="italic"
+        android:textColor="@color/black"
       android:textSize="18sp"
       android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/banner"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
-  <EditText
-    android:id="@+id/email"
-      android:layout_width="380dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="60dp"
-      android:ems="10"
-      android:hint="Email Address"
-      android:inputType="textEmailAddress"
-      android:textSize="24sp"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/bannerDescription"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/password"
@@ -53,7 +55,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"/>
@@ -76,14 +78,14 @@
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="24dp"
         android:text="Forgot Password"
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/signIn"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
 
     <TextView
         android:id="@+id/register"
@@ -109,5 +111,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerDescription"
+        app:srcCompat="@drawable/nft" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
