@@ -18,4 +18,5 @@
     <string name="ageA">Age</string>
     <string name="home">HOME</string>
     <string name="logout">LOGOUT</string>
+    <string name="picture">picture</string>
 </resources>
