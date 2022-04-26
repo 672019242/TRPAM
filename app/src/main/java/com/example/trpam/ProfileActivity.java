@@ -24,13 +24,22 @@ public class ProfileActivity extends AppCompatActivity {
     private DatabaseReference reference;
 
     private String userID;
-
+    private Button home;
     private Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        home = (Button) findViewById(R.id.home);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
+            }
+        });
 
         logout = (Button) findViewById(R.id.signOut);
 

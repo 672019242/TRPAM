@@ -88,7 +88,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmail.setError("Please provide valid email!");
             editTextEmail.requestFocus();
             return;
@@ -123,7 +123,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
 
                                     if(task.isSuccessful()) {
                                         Toast.makeText(RegisterUser.this, "user has been registered successfully !", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.GONE);
+                                        progressBar.setVisibility(View.VISIBLE);
 
                                         //redirect to login layout!
 
