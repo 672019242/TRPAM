@@ -12,8 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TRPAM">
         <activity
+<<<<<<< HEAD
             android:name=".HomeActivity"
             android:exported="false" />
+=======
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+>>>>>>> 0d678d0aca4823340c3810db0424c274507d9498
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
@@ -26,11 +38,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
