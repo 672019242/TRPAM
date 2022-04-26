@@ -12,10 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TRPAM">
         <activity
-<<<<<<< HEAD
             android:name=".HomeActivity"
             android:exported="false" />
-=======
+        <activity
             android:name=".SplashActivity"
             android:exported="true" >
             <intent-filter>
@@ -24,8 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
->>>>>>> 0d678d0aca4823340c3810db0424c274507d9498
+
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
