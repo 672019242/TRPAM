@@ -52,7 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
         user = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference("users");
+        reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
 
         final TextView greetingTextView = (TextView) findViewById(R.id.greeting);
